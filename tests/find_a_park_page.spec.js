@@ -146,7 +146,7 @@ test.describe('Find a park page tests', async ()=>{
         await expect(page.getByLabel('Fishing (551)')).not.toBeChecked();
         await expect(page.getByRole('group', { name: 'Things to do' }).locator('#Hiking')).not.toBeChecked();
         await expect(page.getByLabel('Horseback riding (124)')).not.toBeChecked();
-        await expect(page.getByLabel('Hunting (368)')).not.toBeChecked();
+        await expect(page.getByLabel('Hunting (392)')).not.toBeChecked();
         await expect(page.getByLabel('Interpretive programs (44)')).not.toBeChecked();
         await expect(page.getByLabel('Kayaking (208)')).not.toBeChecked();
         await expect(page.locator('div:nth-child(13) > [id="Pets\\ on\\ leash"]')).not.toBeChecked();
