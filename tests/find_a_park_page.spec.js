@@ -146,7 +146,7 @@ test.describe('Find a park page tests', async ()=>{
         await expect(page.getByLabel('Fishing (551)')).not.toBeChecked();
         await expect(page.getByRole('group', { name: 'Things to do' }).locator('#Hiking')).not.toBeChecked();
         await expect(page.getByLabel('Horseback riding (124)')).not.toBeChecked();
-        await expect(page.getByLabel('Hunting (397)')).not.toBeChecked();
+        await expect(page.getByLabel('Hunting (402)')).not.toBeChecked();
         await expect(page.getByLabel('Interpretive programs (44)')).not.toBeChecked();
         await expect(page.getByLabel('Kayaking (208)')).not.toBeChecked();
         await expect(page.locator('div:nth-child(13) > [id="Pets\\ on\\ leash"]')).not.toBeChecked();
@@ -182,6 +182,4 @@ test.describe('Find a park page tests', async ()=>{
         await page.getByRole('button', { name: 'Load more results' }).click();
         await expect(page.getByText('Arctic Pacific Lakes ParkOminecasee allOpen').first()).toBeVisible();
     });
-    // Test line
-
 });
