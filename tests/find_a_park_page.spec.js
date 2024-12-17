@@ -121,7 +121,7 @@ test.describe('Find a park page tests', async ()=>{
         await expect(page.getByLabel('Hiking (440)')).not.toBeChecked();
         await expect(page.getByLabel('Pets on leash (511)')).not.toBeChecked();
         await expect(page.getByLabel('Picnic areas (258)')).not.toBeChecked();
-        await expect(page.getByLabel('Swimming (343)')).not.toBeChecked();
+        await expect(page.getByLabel('Swimming (342)')).not.toBeChecked();
         await expect(page.getByLabel('Frontcountry camping (187)')).not.toBeChecked();
         await expect(page.getByLabel('Lower Mainland (44)')).not.toBeChecked();
         await expect(page.getByLabel('South Island (96)')).not.toBeChecked();
@@ -146,7 +146,7 @@ test.describe('Find a park page tests', async ()=>{
         await expect(page.getByLabel('Fishing (551)')).not.toBeChecked();
         await expect(page.getByRole('group', { name: 'Things to do' }).locator('#Hiking')).not.toBeChecked();
         await expect(page.getByLabel('Horseback riding (124)')).not.toBeChecked();
-        await expect(page.getByLabel('Hunting (402)')).not.toBeChecked();
+        await expect(page.getByLabel('Hunting (494)')).not.toBeChecked();
         await expect(page.getByLabel('Interpretive programs (44)')).not.toBeChecked();
         await expect(page.getByLabel('Kayaking (208)')).not.toBeChecked();
         await expect(page.locator('div:nth-child(13) > [id="Pets\\ on\\ leash"]')).not.toBeChecked();
@@ -155,12 +155,12 @@ test.describe('Find a park page tests', async ()=>{
         await expect(page.getByLabel('Waterskiing (67)')).not.toBeChecked();
         await expect(page.getByLabel('Wildlife viewing (290)')).not.toBeChecked();
         await expect(page.getByLabel('Windsurfing (69)')).not.toBeChecked();
-        await expect(page.getByLabel('Winter recreation (164)')).not.toBeChecked();
+        await expect(page.getByLabel('Winter recreation (165)')).not.toBeChecked();
         await expect(page.getByLabel('Accessibility information (206)')).not.toBeChecked();
         await expect(page.getByLabel('Bike park (11)')).not.toBeChecked();
-        await expect(page.getByLabel('Boat launch (146)')).not.toBeChecked();
+        await expect(page.getByLabel('Boat launch (145)')).not.toBeChecked();
         await expect(page.getByLabel('Campfires (406)')).not.toBeChecked();
-        await expect(page.getByLabel('Drinking water (172)')).not.toBeChecked();
+        await expect(page.getByLabel('Drinking water (171)')).not.toBeChecked();
     });
 
     test('Check the A-Z park list redirects to the correct page', async ({page})=>{

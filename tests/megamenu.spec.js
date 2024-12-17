@@ -31,7 +31,7 @@ test.describe('Check the level 1 menu items are displayed, active & clickable', 
     test('Check the Plan your trip menu item' , async ({page})=>{
         await expect(page.getByRole('menuitem', { name: 'Plan your trip' })).toBeVisible();
         await page.getByRole('menuitem', { name: 'Plan your trip' }).click();
-        await expect(page.locator('#home div').filter({ hasText: 'Main Menu BackPlan your' }).nth(4)).toBeVisible();
+        await expect(page.locator('#home div').filter({ hasText: 'BackPlan your tripActive' }).nth(4)).toBeVisible();
         await expect(page.getByRole('menuitem', { name: 'Plan your trip', exact: true })).toBeVisible();
         await expect(page.getByRole('menu')).toContainText('Plan your trip');
         await expect(page.getByRole('menuitem', { name: 'Active advisories' })).toBeVisible();
@@ -44,7 +44,7 @@ test.describe('Check the level 1 menu items are displayed, active & clickable', 
         await expect(page.getByRole('menu')).toContainText('Visit responsibly');
         await expect(page.getByRole('menuitem', { name: 'Accessibility' })).toBeVisible();
         await expect(page.getByRole('menu')).toContainText('Accessibility');
-        await page.getByRole('menuitem', { name: 'Plan your trip', exact: true }).click();
+        await page.getByRole('menuitem',{ name: 'Plan your trip', exact: true }).click();
         await expect(page).toHaveURL(baseURL + 'plan-your-trip/');
         
 
