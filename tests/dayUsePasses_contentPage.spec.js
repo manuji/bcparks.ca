@@ -30,7 +30,7 @@ test('Verify the page content', async ({ page }) => {
     await expect(page.getByRole('heading', { name: 'Day-use passes', exact: true })).toBeVisible();
     await expect(page.locator('h1')).toContainText('Day-use passes');
     await expect(page.getByRole('img', { name: 'Day-use passes' })).toBeVisible();
-    await expect(page.getByText('Joffre LakesGaribaldiGolden EarsMount SeymourWhy day-use passes?', { exact: true })).toBeVisible();
+    await expect(page.getByText('Mount SeymourJoffre LakesGaribaldiGolden EarsWhy day-use passes?', { exact: true })).toBeVisible();
     await expect(page.locator('#section-navbar').getByRole('link', { name: 'Joffre Lakes' })).toBeVisible();
     await expect(page.locator('#section-navbar')).toContainText('Joffre Lakes');
     await expect(page.locator('#section-navbar').getByRole('link', { name: 'Garibaldi' })).toBeVisible();
