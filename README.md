@@ -40,7 +40,7 @@ Prod | Test | Dev | Alpha-Test | Alpha-Dev
 
 Running a local environment allows users to quickly see changes without waiting for a full build (10+ minutes). The local environment setup described below uses Gatsby JS to render the site frontend locally, and you can choose to set up a local Strapi CMS instance or use an external Strapi CMS instance (TEST or PROD) as the datasource.
 
-IMPORTANT: this process is not currently working on Windows without virtualisation. It is known to work on OS X, and inside a Linux container running in VMWare Player.
+IMPORTANT: this process is not currently working on Windows without virtualisation. It is known to work on OS X, and inside a Linux container running in VMWare Player. 
 
 ### Prerequisites
 
