@@ -231,6 +231,7 @@ jobs:
           oc -n ${{ secrets.OPENSHIFT_GOLD_LICENSE_PLATE }}-dev rollout restart deployment ${{ github.ref_name }}-cms
           oc -n ${{ secrets.OPENSHIFT_GOLD_LICENSE_PLATE }}-dev rollout restart deployment ${{ github.ref_name }}-maintenance
           oc -n ${{ secrets.OPENSHIFT_GOLD_LICENSE_PLATE }}-dev rollout restart deployment ${{ github.ref_name }}-scheduler
+  
   automatedTests:
     name: Automated tests
     uses: manuji/bcparks-automated-tests/.github/workflows/playwright.yml@main
