@@ -114,7 +114,7 @@ test.describe('Check the level 1 menu items are displayed, active & clickable', 
         await page.getByRole('menuitem', { name: 'Volunteer' }).click();
         await expect(page.getByRole('menuitem', { name: 'Volunteer' }).nth(1)).toBeVisible();
         await expect(page.getByRole('menuitem', { name: 'Volunteer Awards' })).toBeVisible();
-        await expect(page.getByRole('menuitem', { name: 'Engage with us arrow-up-right' })).toBeVisible();
+        await expect(page.getByRole('menuitem', { name: 'Engage with us' })).toBeVisible();
         await expect(page.getByRole('menuitem', { name: 'Participate in design' })).toBeVisible();
         await page.getByRole('menuitem', { name: 'Get involved', exact: true }).click();
         await expect(page).toHaveURL(baseURL + 'get-involved/');
@@ -171,14 +171,15 @@ test.describe('Check the level 1 menu items are displayed, active & clickable', 
         await expect(page.getByRole('menuitem', { name: 'Thompson Cariboo projects' })).toBeVisible();
         await expect(page.getByRole('menuitem', { name: 'Omineca Peace projects' })).toBeVisible();
         await expect(page.getByRole('menuitem', { name: 'Skeena projects' })).toBeVisible();
-        await expect(page.getByRole('menuitem', { name: 'News' })).toBeVisible();
-        await expect(page.getByRole('menuitem', { name: 'Reports and surveys' })).toBeVisible();
         await expect(page.getByRole('menuitem', { name: 'Careers' })).toBeVisible();
         await page.getByRole('menuitem', { name: 'Careers' }).click();
         await expect(page.getByRole('menuitem', { name: 'Careers' }).nth(1)).toBeVisible();
         await expect(page.getByRole('menuitem', { name: 'Park Ranger careers' })).toBeVisible();
         await expect(page.getByRole('menuitem', { name: 'Student Rangers' })).toBeVisible();
         await expect(page.getByRole('menuitem', { name: 'Park operators' })).toBeVisible();
+        await expect(page.getByRole('menuitem', { name: 'News' })).toBeVisible();
+        await page.getByRole('menuitem', { name: 'Get involved ' }).click();
+        await page.getByRole('menuitem', { name: 'Engage with us' }).click();
 
     })
 
